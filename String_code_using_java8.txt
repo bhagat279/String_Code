@@ -1,0 +1,100 @@
+1. Find the maximum and minimum values in a list of integers using streams.
+Use stream().max() and stream().min().
+2. Filter out all even numbers from a list of integers using streams.
+Use filter() to exclude even numbers.
+3. Find the sum of all numbers in a list using streams.
+Use stream().mapToInt(), and sum().
+4. Find the average of all numbers in a list using streams.
+Use stream().mapToInt().average().
+5. Count the number of occurrences of a specific number in a list using streams.
+Use filter() and count().
+6. Convert a list of strings to uppercase using streams.
+Use map() to convert each string to uppercase.
+7. Remove duplicates from a list of integers.
+Use stream().distinct().
+8. Sort a list of integers in ascending order using streams.
+Use stream().sorted().
+9. Sort a list of strings by length using streams.
+Use stream().sorted(Comparator.comparingInt(String::length)).
+10. Join a list of strings into a single string with a delimiter.
+Use Collectors.joining().
+11. Find all the words with a length greater than 5 in a list of strings.
+Use filter() and length().
+12. Find the first element that is a multiple of 3 in a list.
+Use stream().filter() and findFirst().
+13. Check if a list of strings contains any element starting with a specific letter.
+Use stream().anyMatch().
+14. Check if all elements in a list are positive numbers.
+Use stream().allMatch().
+15. Find the product of all integers in a list.
+Use reduce() to multiply.
+16. Convert a list of strings into a list of integers based on string lengths.
+Use map() to map strings to their lengths.
+17. Find the longest string in a list.
+Use stream().max(Comparator.comparingInt(String::length)).
+18. Find the most frequent number in a list.
+Use Collectors.groupingBy() and entrySet() to count occurrences.
+19. Partition a list of integers into even and odd lists.
+Use Collectors.partitioningBy().
+20. Transform a list of integers into a list of their square roots.
+Use map() to apply Math.sqrt().
+21. Convert a list of strings into a map where the key is the string length and the value is the string itself.
+Use Collectors.toMap().
+22. Check if a list of strings contains only digits.
+Use stream().allMatch() and Character.isDigit().
+23. Find the second largest number in a list.
+Use sorted() and skip the first element.
+24. Create a map of the frequency of each character in a string.
+Use Collectors.groupingBy() and Collectors.counting().
+25. Group a list of integers by their even or odd property.
+Use Collectors.groupingBy().
+26. Remove all null elements from a list using streams.
+Use filter(Objects::nonNull).
+27. Sum all the integers in a list using streams.
+Use stream().mapToInt().sum().
+28. Find the average of a list of numbers that are greater than a threshold.
+Use filter() and mapToInt().
+29. Create a list of squares from a list of numbers.
+Use map() to square each number.
+30. Map a list of strings to their corresponding integer length.
+Use map() to map strings to lengths.
+31. Find the first string that starts with a vowel in a list.
+Use filter() with a condition for vowels.
+32. Sort a list of people by age.
+Use stream().sorted(Comparator.comparing(Person::getAge)).
+33. Create a list of the first letters of each string in a list.
+Use map() to extract the first character.
+34. Find the longest word in a list of strings.
+Use stream().max(Comparator.comparingInt(String::length)).
+35. Find all words in a sentence with more than 3 characters.
+Use split(" ") and then filter().
+36. Group a list of employees by their department.
+Use Collectors.groupingBy().
+37. Flatten a list of lists into a single list.
+Use flatMap().
+38. Remove empty strings from a list of strings.
+Use filter() with isEmpty().
+39. Concatenate a list of strings into a single string.
+Use Collectors.joining().
+40. Filter strings that contain a specific substring.
+Use filter() with contains().
+41. Find the longest palindrome in a list of strings.
+Use filter() and StringBuilder().reverse() to check for palindromes.
+42. Find the smallest number divisible by 5 in a list.
+Use filter() and findFirst().
+43. Transform a list of strings into a set of their lengths.
+Use map() and Collectors.toSet().
+44. Find the second smallest element in a list.
+Sort the list and skip the first element.
+45. Count how many times each word appears in a list.
+Use Collectors.groupingBy() and Collectors.counting().
+46. Create a list of unique words from a sentence.
+Use split(" ") and distinct().
+47. Find the sum of the squares of all numbers divisible by 3.
+Use filter() for divisibility and map() to square the numbers.
+48. Find the common elements between two lists.
+Use stream().filter() and contains().
+49. Check if there is any element greater than a specified value in a list.
+Use anyMatch() with the specified value.
+50. Map a list of numbers to their binary string equivalents.
+Use map() with Integer.toBinaryString().
